@@ -22,10 +22,10 @@ First_fr = Frame()
 def send_id():
     id = entry_id.get()
     balance = entry_balance.get()
-    setbalnce = "https://coderlog.top/api/goit/?key=5b15bdfa142761a1c65f50e046b6f7f5&method=setbalance&user={}&balance={}".format(id, balance)
+    setbalnce = "https://coderlog.top/api/goit/?key=yourkey&method=setbalance&user={}&balance={}".format(id, balance)
     requests.get(setbalnce)
 
-    url = "https://coderlog.top/api/goit/?key=5b15bdfa142761a1c65f50e046b6f7f5&method=getdata&user={}".format(id)
+    url = "https://coderlog.top/api/goit/?key=yourkey&method=getdata&user={}".format(id)
     res = requests.get(url)
     json = res.json()
     
